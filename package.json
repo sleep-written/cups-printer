@@ -10,8 +10,8 @@
   },
   "files": [ "dist" ],
   "scripts": {
-    "build": "./build.sh",
-    "install": "",
+    "build": "rm -rf ./dist && tsc -p ./tsconfig.build.json",
+    "prepare": "npm run build",
     "test": "clear && ava"
   },
   "author": "sleep-written",
