@@ -1,8 +1,10 @@
 {
   "name": "cups-printer",
-  "version": "0.0.1",
+  "description": "A package to print documents using CUPS Printer Server in Linux",
+  "version": "0.2.0",
   "type": "module",
-  "module": "./dist/index.ts",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.js"
@@ -24,6 +26,16 @@
     "url": "https://github.com/sleep-written/cups-printer/issues"
   },
   "homepage": "https://github.com/sleep-written/cups-printer#readme",
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "cups",
+    "printer",
+    "server",
+    "bash",
+    "pdf"
+  ],
   "devDependencies": {
     "@types/node": "^18.7.6",
     "ava": "^4.3.1",
